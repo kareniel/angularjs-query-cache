@@ -1,0 +1,29 @@
+{
+  "name": "angularjs-query-cache",
+  "version": "1.0.0",
+  "description": "cache response to queries made using the $http service",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kareniel/angularjs-query-cache.git"
+  },
+  "keywords": [
+    "angularjs",
+    "$http",
+    "http",
+    "query",
+    "cache",
+    "caching",
+    "localStorage",
+    "request"
+  ],
+  "author": "kareniel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kareniel/angularjs-query-cache/issues"
+  },
+  "homepage": "https://github.com/kareniel/angularjs-query-cache#readme"
+}
