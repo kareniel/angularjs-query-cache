@@ -31,7 +31,7 @@ This module decorates the $http service to add better caching.
 
 ## Usage
 
-Set the `_cache` field to `true` in the `options` object when making a get request using $http.
+Set the `_cache` field to `true` in the `options` object when making a get request using $http. 
 Optionally, you can see the max age (in milliseconds) on individual calls through the `_maxAge` key. 
 
 
@@ -48,5 +48,6 @@ $http.get('https://api.my-service.io/endpoint', opts)
 
 Using npm:
 
-``npm install --save angularjs-query-cache`
+`npm install --save angularjs-query-cache`
+
 
