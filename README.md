@@ -28,17 +28,18 @@
 Sometimes you want to keep the result to a query you made previously.
 This module decorates the $http service to add better caching.
 
+This module uses sessionStorage which means restarting the browser will reset the cache.
 
 ## Usage
 
-Set the `_cache` field to `true` in the `options` object when making a get request using $http.
-Optionally, you can see the max age (in milliseconds) on individual calls through the `_maxAge` key. 
+Set the `_cache` field to `true` in the `options` object when making a get request using $http. 
+Optionally, you can see the max age (in milliseconds) on individual calls through the `_maxAge` key.
 
 
 ```js
 var opts = { 
   _cache: true, 
-  _maxAge: 5 * 60 * 1000 
+  _maxAge: 5 * 60 * 1000 // <- this is the default value (5 minutes)
 }
 
 $http.get('https://api.my-service.io/endpoint', opts)
@@ -48,5 +49,6 @@ $http.get('https://api.my-service.io/endpoint', opts)
 
 Using npm:
 
-``npm install --save angularjs-query-cache`
+`npm install --save angularjs-query-cache`
+
 
