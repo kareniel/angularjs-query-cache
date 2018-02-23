@@ -27,7 +27,7 @@ function $httpDecorator ($delegate, $q) {
 
     if (cache.contains(url)) return Promise.resolve(cache.get(url))
 
-    return old(url, config).then(res => {
+    return old(url, config).then(function (res) {
       if (config && config._cache && !isTemplate) {
         cache.set(url, res, config._maxAge)
       }
