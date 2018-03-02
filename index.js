@@ -1,4 +1,5 @@
 queryCache.$inject = ['$provide']
+$httpDecorator.$inject = ['$delegate', '$q']
 
 const STORAGE_KEY = 'angularjs_query_cache'
 const MINUTE = 60 * 1000
